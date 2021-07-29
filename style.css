@@ -1,0 +1,61 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    width: 97%;
+    max-width: 1200px;
+    margin: 0 auto;
+    float: none;
+    background-color: white;
+}
+
+div img {
+    width: 100%;
+    max-width: 250px;
+
+}
+
+.row::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.col-4,
+.col-1-2 {
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+    min-height: 1px;
+    padding: 0.5rem;
+}
+
+
+.col-4 {
+    background-color: violet;
+}
+
+.col-1-2 {
+    background-color: rgb(216, 9, 216);
+}
+
+.main-title {
+    text-align: center;
+    padding: 1rem;
+
+}
+
+.main-title h1 {
+    font-size: 3rem;
+
+}
