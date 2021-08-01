@@ -21,7 +21,6 @@ body {
 
 div img {
     width: 100%;
-    max-width: 250px;
 
 }
 
@@ -37,7 +36,7 @@ div img {
     margin-left: 4%;
     margin-right: 4%;
     min-height: 1px;
-    padding: 0.5rem;
+    padding: 0.5em;
 }
 
 
@@ -51,11 +50,39 @@ div img {
 
 .main-title {
     text-align: center;
-    padding: 1rem;
+    padding: 1em;
 
 }
 
 .main-title h1 {
-    font-size: 3rem;
+    font-size: 3em;
 
+}
+
+/*medias queries*/
+/*tablet*/
+
+@media only screen and (min-width: 480px) {
+    div img {
+        width: 100%;
+        max-width: 250x;
+    }
+
+    .col-4, .col-1-2 {
+
+        margin-right: 0;
+        float: left;
+    }
+
+    .col-1-2 {
+        width: 44%;
+    }
+}
+
+/*desktop*/
+
+@media only screen and (min-width: 768px) {
+.col-1-2 {
+    width: 20%;
+}
 }
