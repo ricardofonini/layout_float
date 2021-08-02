@@ -14,7 +14,7 @@ body {
 .wrapper {
     width: 97%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
     float: none;
     background-color: white;
 }
@@ -31,7 +31,10 @@ div img {
 }
 
 .col-4,
-.col-1-2 {
+.col-1-2, 
+.col-2, 
+.col-1-4, 
+.col-3-4 {
     width: 92%;
     margin-left: 4%;
     margin-right: 4%;
@@ -40,13 +43,20 @@ div img {
 }
 
 
-.col-4 {
+.col-4, 
+.col-1-4 {
     background-color: violet;
 }
 
-.col-1-2 {
+.col-1-2, 
+.col-3-4 {
     background-color: rgb(216, 9, 216);
 }
+
+.col-2 {
+    background-color: rgb(98, 46, 146);
+}
+
 
 .main-title {
     text-align: center;
@@ -54,10 +64,15 @@ div img {
 
 }
 
-.main-title h1 {
+.main-title .h1 {
     font-size: 3em;
 
 }
+
+.footer {
+    background-color: rgb(58, 6, 35);
+}
+
 
 /*medias queries*/
 /*tablet*/
@@ -66,15 +81,20 @@ div img {
     div img {
         width: 100%;
         max-width: 250x;
+
     }
 
-    .col-4, .col-1-2 {
-
+    .col-4,
+    .col-1-2,
+    .col-2,
+    .col-1-4,
+    .col-3-4 {
         margin-right: 0;
         float: left;
     }
 
-    .col-1-2 {
+    .col-1-2,
+    .col-2 {
         width: 44%;
     }
 }
@@ -82,7 +102,10 @@ div img {
 /*desktop*/
 
 @media only screen and (min-width: 768px) {
-.col-1-2 {
-    width: 20%;
-}
+    .col-1-2, .col-1-4 {
+        width: 20%;
+    }.col-3-4 {
+        width: 68%;
+    }
+
 }
